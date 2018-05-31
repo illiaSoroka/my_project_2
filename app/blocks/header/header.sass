@@ -1,0 +1,108 @@
+.header 
+	width: 100%
+	background-color: #eff0f2
+	.top-line
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 100%
+		height: 115px
+		padding: 60px 10% 0 10%
+
+		.toggle-mnu
+			padding-top: 10px
+			width: 30px
+			height: 30px
+			span
+				margin: 10px
+				&:after, &:before
+					content: ""
+					position: absolute
+					left: 0
+					top: -9px
+				&:after
+					top: 9px
+					width: 100%
+					height: 3px
+					background-color: #606061
+					transition: all 0.3s
+					backface-visibility: hidden
+					border-radius: 2px
+				position: relative
+				display: block
+				width: 100%
+				height: 3px
+				background-color: #606061
+				transition: all 0.3s
+				backface-visibility: hidden
+				border-radius: 2px
+				&:before
+					width: 100%
+					height: 3px
+					background-color: #606061
+					transition: all 0.3s
+					backface-visibility: hidden
+					border-radius: 2px
+			&.on
+				span
+					background-color: transparent
+					&:before
+						transform: rotate(45deg) translate(5px, 5px)
+					&:after
+						transform: rotate(-45deg) translate(7px, -8px)
+				+ #menu
+					opacity: 1
+					visibility: visible
+.main-mnu
+	padding-top: 10px
+	top: 15px
+	right: 140px
+	position: relative
+	text-align: right
+	display: none
+	overflow: hidden
+	border: #777879 2px solid
+	min-width: 180px
+	background-color: $main-color
+	ul
+		padding-right: 5px
+		li
+			list-style-type: none
+		a
+			width: 100%
+			color: #505050
+
+.header-wrap
+	padding-top: 200px
+	h1
+		text-align: center
+		text-shadow: 3px 5px 0 #cccdcf
+		span
+			padding: 3px 10px 0 10px
+			background-color: $main-color
+			text-shadow: 3px 5px 0 #9ad2ce
+	.buttons
+		padding-top: 110px
+		button
+			display: inline-block
+			background: transparent
+			color: #606061
+			border: #777879 2px solid
+			width: 230px
+			height: 50px
+			transition: all .25s ease
+			&:hover
+				background-color: $main-color
+
+	.img-wrap
+		display: flex
+		justify-content: flex-end
+		padding: 0 15% 135px 0
+
+.before
+	content: ""
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0

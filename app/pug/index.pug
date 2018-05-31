@@ -1,0 +1,30 @@
+extends main.pug
+
+include ../blocks/header/header.pug
+include ../blocks/about_us/about_us.pug
+include ../blocks/featured_works/featured_works.pug
+include ../blocks/our_services/our_services.pug
+include ../blocks/small_team/small_team.pug
+include ../blocks/what_they_says/what_they_says.pug
+include ../blocks/footer/footer.pug
+
+block title
+	title projec
+
+block pagecontent
+
+	+header()
+
+	+about_us()
+
+	+featured_works()
+
+	+our_services()
+
+	+small_team()
+
+	+what_they_says()
+
+	+footer()
+
+	

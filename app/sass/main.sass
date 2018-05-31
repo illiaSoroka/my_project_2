@@ -1,0 +1,78 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@import "../blocks/header/header.sass"
+@import "../blocks/footer/footer.sass"
+@import "../blocks/about_us/about_us.sass"
+@import "../blocks/featured_works/featured_works.sass"
+@import "../blocks/our_services/our_services.sass"
+@import "../blocks/small_team/small_team.sass"
+@import "../blocks/what_they_says/what_they_says.sass"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #777879 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: $main-color
+		&:required:valid
+			border-color: green
+
+b, strong
+	font-weight: bold
+
+h1, h2, h3
+	font-family: "MerriweatherBold", sans-serif
+	text-transform: uppercase
+
+h1
+	font-size: 45px
+	color: #505050
+
+h2
+	font-size: 38px
+	color: #666767
+
+h3
+	font-size: 20px
+	color: #666767
+
+h4
+	font-family: "MerriweatherRegular", sans-serif
+	text-transform: uppercase
+	font-size: 18px
+	color: #848585
+
+
+
+.buttons
+	text-align: center
+	button
+		font-family: "Montserrat-Regular", sans-serif
+		font-size: 18px
+		text-transform: uppercase
+		text-align: center
+
+.container
+	color: $main-color
+	display: block
+
+a
+	text-decoration: none
+
+@import "media" // Always at the end
