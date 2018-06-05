@@ -5,6 +5,15 @@ $(document).ready(function() {
 		$(".main-mnu").slideToggle();
 	});
 
+	$(".owl-carousel").owlCarousel({
+		loop:true,
+		dots: true,
+		items: 1,
+		dotsSpeed : 600,
+	});
+
+
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

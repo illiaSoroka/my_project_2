@@ -2,6 +2,8 @@
 @import "fonts"
 @import "libs"
 
+
+@import "../sass/_media.sass"
 @import "../blocks/header/header.sass"
 @import "../blocks/footer/footer.sass"
 @import "../blocks/about_us/about_us.sass"
@@ -15,7 +17,7 @@
 
 ::selection
 	background-color: $accent
-	color: #fff
+	color: #000
 
 body
 	font-size: 16px
@@ -72,7 +74,13 @@ h4
 	color: $main-color
 	display: block
 
-a
+a, a:hover, a:focus, a:active
+	color: $main-color
 	text-decoration: none
+
+.home_sect
+	width: 100%
+	text-align: center
+	padding: 125px 0 110px 0
 
 @import "media" // Always at the end
