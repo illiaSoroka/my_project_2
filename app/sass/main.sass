@@ -11,9 +11,12 @@
 @import "../blocks/our_services/our_services.sass"
 @import "../blocks/small_team/small_team.sass"
 @import "../blocks/what_they_says/what_they_says.sass"
+@import "../blocks/logo/logo.sass"
+@import "../blocks/contact/contact.sass"
+@import "../blocks/footer/footer.sass"
 
 ::placeholder
-	color: #666
+	color: #c2c6c9
 
 ::selection
 	background-color: $accent
@@ -87,6 +90,8 @@ a:hover, a:focus, a:active
 	width: 100%
 	text-align: center
 	padding: 125px 0 110px 0
+	h4
+		animation-delay: .4s
 
 .before
 	content: ''
@@ -95,5 +100,16 @@ a:hover, a:focus, a:active
 	position: absolute
 	left: 0
 	top: 0
+
+.animate
+	animation-delay: .6s
+
+.animat_footer
+	p
+		animation-delay: .1s
+	.social
+		animation-delay: .3s
+	.last_text
+		animation-delay: .5s
 
 @import "media" // Always at the end

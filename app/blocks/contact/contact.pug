@@ -1,0 +1,16 @@
+mixin contact()
+	.contacts
+		.contact.animate
+			.forms
+				form
+					input(class="input" type="text" name="Name*" placeholder="Name*" reaquired)
+					input(class="input" type="text" name="Subject*" placeholder="Subject*" reaquired)
+					input(class="input" type="text" name="E-mail*" placeholder="E-mail*" reaquired)
+					input(class="input message" type="text" name="Message*" placeholder="Message*" reaquired)
+					.buttons <button>SEND MESSAGE</button>
+			.address
+				.address_text
+					p Adress line 1 <br>Adress line 2 <br>Phone: +548 945645 <br>Fax: +456456 5
+					p Web: www.designagency.net<br>E-mail: info@designagency.net
+				.maps
+					img(class="img_maps" src="img/maps.png", alt="#")

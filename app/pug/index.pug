@@ -6,7 +6,10 @@ include ../blocks/featured_works/featured_works.pug
 include ../blocks/our_services/our_services.pug
 include ../blocks/small_team/small_team.pug
 include ../blocks/what_they_says/what_they_says.pug
+include ../blocks/logo/logo.pug
+include ../blocks/contact/contact.pug
 include ../blocks/footer/footer.pug
+
 
 block title
 	title projec
@@ -24,6 +27,10 @@ block pagecontent
 	+small_team()
 
 	+what_they_says()
+
+	+logo()
+
+	+contact()
 
 	+footer()
 

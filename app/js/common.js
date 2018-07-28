@@ -5,14 +5,40 @@ $(document).ready(function() {
 		$(".main-mnu").slideToggle();
 	});
 
-	$(".owl-carousel").owlCarousel({
+	$('.owl-carousel').slick({
 		loop:true,
 		dots: true,
+		arrows: false,
 		items: 1,
 		dotsSpeed : 600,
 	});
 
 
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+ 		autoplaySpeed: 6500,
+		dots: true,
+		arrows: false,
+		fade: true,
+		infinite: true,
+		asNavFor: '.slider-nav',
+		fade: true,
+		speed: 500,
+	});
+	$('.slider-nav').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		asNavFor: '.slider-for',
+		arrows: true,
+		fade: true,
+		speed: 500,
+	});
+
+	$(".home_sect h2, .home_sect h4").animated("fadeInUp");
+	$(".animate, .animat_footer p, .animat_footer .social, .animat_footer .last_text").animated("fadeInUp");
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
