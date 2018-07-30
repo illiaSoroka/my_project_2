@@ -37,6 +37,21 @@ $(document).ready(function() {
 		speed: 500,
 	});
 
+	$(".forms").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				
+				$(".forms").trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
 	$(".home_sect h2, .home_sect h4").animated("fadeInUp");
 	$(".animate, .animat_footer p, .animat_footer .social, .animat_footer .last_text").animated("fadeInUp");
 
